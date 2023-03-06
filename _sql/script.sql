@@ -1,0 +1,13 @@
+CREATE DATABASE videogames;
+
+USE videogames;
+
+CREATE TABLE game (
+  id TINYINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  description TEXT NOT NULL,
+  release_date DATE NOT NULL,
+  poster VARCHAR(255) NOT NULL,
+  price DECIMAL(5,2) NOT NULL
+);
+
